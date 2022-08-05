@@ -1,0 +1,14 @@
+{
+  "name": "xcx-cloud",
+  "version": "1.0.0",
+  "description": "微信云开发小程序",
+  "author": "Arima <arima_p@foxmail.com>",
+  "keywords": [
+    "wechat",
+    "taro",
+    "xcx",
+    "cloud"
+  ],
+  "license": "ISC",
+  "scripts": {}
+}
