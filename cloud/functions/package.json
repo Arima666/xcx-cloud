@@ -1,0 +1,17 @@
+{
+  "name": "xcx-cloud-functions",
+  "version": "1.0.0",
+  "description": "微信小程序——云开发——云函数",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arima <arima_p@foxmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

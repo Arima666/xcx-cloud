@@ -1,7 +1,7 @@
 {
   "name": "xcx-cloud",
   "version": "1.0.0",
-  "description": "微信云开发小程序",
+  "description": "微信小程序——云开发",
   "author": "Arima <arima_p@foxmail.com>",
   "keywords": [
     "wechat",
@@ -10,5 +10,34 @@
     "cloud"
   ],
   "license": "ISC",
-  "scripts": {}
+  "repository": "git@github.com:Arima666/xcx-cloud.git",
+  "scripts": {
+    "preinstall": "sh ./scripts/setupHusky.sh",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.12.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "client/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "cloud/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
